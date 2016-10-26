@@ -10,6 +10,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="mystyle.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,43 +20,192 @@
     <![endif]-->
   </head>
   <body>
-    
-    <div class ="navbar navbar-inverse navbar-static-top" role="navigation">
-        <!--container keeps everything within bootstrap's grid-->
-        <div class = "container">
+  
 
-            <div class = "navbar-header">
 
-                <button type = "button" class= "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse">
-                  <!--making it accessible friendly for screen readers-->
-                  <span class="sr-only"> Toggle navigation</span>
-                  <!--creating icon bars-->
-                  <span class="icon-bar"> </span>
-                  <span class="icon-bar"> </span>
-                  <span class="icon-bar"> </span>
-                  <span class="icon-bar"> </span>
-                </button>
-              <a class="navbar-brand" href=""> Dr. Ananda Mondal</a>
-            </div> 
 
-            <!--references the navbar collapse. The data toggle. when we collapse the browser and the button in the g query kicks in it will reference the content-->
-            <div class="navbar-collapse collapse"> 
 
-              <!--aligns everything properly on the left side-->
-              <ul class="nav navbar-nav navbar-left">
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Dr. Ananda Mondal</a>
+  </div>
+  
+  <div class="collapse navbar-collapse js-navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown mega-dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<span class="caret"></span></a>        
+        <ul class="dropdown-menu mega-dropdown-menu">
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Research</li>                            
+                            <div id="menCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=Students" class="img-responsive" alt="product 1"></a>                                      
+                                    
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=Cyfinder research" class="img-responsive" alt="product 2"></a>
+                                            
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=Best Researcher" class="img-responsive" alt="product 3"></a>
+                                    
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">Continue to Research <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Publications </li>
+              <li><a href="#">Publications 1</a></li>
+                            <li><a href="#">sub Publications 1</a></li>
+                            <li><a href="#">sub Publications 2</a></li>
+              <li><a href="#">sub Publications 3</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Something else here</li>
+                            <li><a href="#">Under SOmething else</a></li>
+              <li><a href="#">Under Something else</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Courses </li>
+              <li><a href="#">Java Programing</a></li>
+              <li><a href="#">Perl Programing</a></li>
+              <li><a href="#">Java programing 1</a></li>                            
+              <li><a href="#">Perl Programing 2</a></li>              
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Data</li>
+                            <li><a href="#">Sub Data1</a></li>
+              <li><a href="#">Sub Data 2</a></li>
+              <li><a href="#">Sub Data 3</a></li>
+              <li><a href="#">Sub Data 4</a></li>                         
+            </ul>
+          </li>
+        </ul>       
+      </li>
+            <li class="dropdown mega-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>        
+        <ul class="dropdown-menu mega-dropdown-menu">
+          <li class="col-sm-3">
+              <ul>
+              <li class="dropdown-header">Education and history</li>
+              <li><a href="#">Schools</a></li>
+                            <li><a href="#">School1</a></li>
+                            <li><a href="#">School2</a></li>
+              <li><a href="#">School 3</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Resume</li>
+                            <li><a href="#">Download Resume</a></li>
+              <li><a href="#">Under Anything else</a></li>
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Careers</li>
+              <li><a href="#">Applying to Research with Dr. Ananda Mondal</a></li>
+              <li><a href="#">Lab Location</a></li>
+              <li><a href="#">Current Research</a></li>                            
+              <li><a href="#">Anything else here</a></li>              
+            </ul>
+          </li>
+          <li class="col-sm-3">
+            <ul>
+              <li class="dropdown-header">Claflin University</li>
+                            <li><a href="#">Anything 1</a></li>
+              <li><a href="#">Anything 2</a></li>
+              <li><a href="#">Anything 3</a></li>
+              <li><a href="#">Anything 4</a></li>                         
+            </ul>
+          </li>
+                    <li class="col-sm-3">
+              <ul>
+              <li class="dropdown-header">Featured News and Research</li>                            
+                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=Instructor Award" class="img-responsive" alt="product 1"></a>
+                                    
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=Another thing here" class="img-responsive" alt="product 2"></a>
+                                    
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=Another thing here too" class="img-responsive" alt="product 3"></a>
+                                    
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">More about Featured News<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+            </ul>
+          </li>
+        </ul>       
+      </li>
+            <li><a href="#">Software and Downloads</a></li>
+    </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CyFinder <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">About CyFinder</a></li>
+            <li><a href="#">CyFinder Documentation</a></li>
+            <li><a href="#">CyFinder Tutorial</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+  </div><!-- /.nav-collapse -->
+  </nav>
+</div>
 
-                  <li class="active"><a href="#">Home</a></li>
 
-              </ul>
-            </div> 
 
-        </div>
 
-    </div>
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+     
   </body>
 </html>
