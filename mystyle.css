@@ -436,12 +436,12 @@ body {
 	-ms-border-radius: 50%;
 	border-radius: 50%;
 	float: left;
-	height: 36px;
-	line-height: 36px;
+	height: 45px;
+	line-height: 1px;
 	margin: 0 8px 0 0;
 	padding: 0;
 	text-align: center;
-	width: 36px;
+	width: 45px;
 	transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
 	-webkit-transition: all 0.5s ease 0s;
@@ -479,6 +479,7 @@ body {
 .payments {
 	font-size: 1.5em;	
 }
+
 
 
 
